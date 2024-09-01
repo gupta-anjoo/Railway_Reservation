@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+  <link rel="stylesheet" href="public/style_login.css">
+</head>
+<body>
+  <div id="alert">Please fill details</div>
+  <div class="input">
+  <div class="photo">
+    <span class="text1">Welcome to</span>
+    <span class="text2"></span>
+    <span class="text2">HealthFit</span>
+  </div>
+ 
+  <div class="main">
+    <form action="" method="post" class="form" onsubmit="return valid()">
+      <img src="images/doctor.jpg" alt="" top="40px" bottom="12px" height="100px" width="100px">
+      <h2 class="container">Login</h2>
+      <div class="container" id="user">
+        <label for="loginUser"></label>
+        <input type="text" id="textbox" name="loginUser" id="LoginUser"  size="30px" placeholder="Enter your username" required>
+      </div>
+      
+      <div class="container">
+        <label for="loginPassword"></label>
+        <input type="password" id="text" name="loginPassword" id="LoginPassword" size="30px" placeholder="Enter your password" required>
+
+      </div>
+    
+      
+      <button class="container" id="button1">Login</button>
+      <p>Don't have an account? <a href="signup.html">SignUp</a></p>
+      </div>
+      </div>
+    </form> 
+</body>
+<script src="script1.js"></script>
+</html>

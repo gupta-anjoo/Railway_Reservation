@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sources of Nutrients</title>
+    <style>
+        body{
+                background: url('images/recipe2.jpg')no-repeat;
+                background-size:cover;
+                height: 100%;
+                width: 100%;
+            }
+            .nutrient{
+                margin-left: 900px;
+                margin-top: 180px;
+                font-size: 30px;
+                font-weight: bolder;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            #source{
+                height: 29px;
+                border-width: 2px;
+                border-radius: 5px;
+                border-color: black;
+            }
+            #sources{
+                margin-left: 900px;
+                margin-top: 75px;
+                font-size: 30px;
+                font-weight: bolder;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+    </style>
+</head>
+<body>
+    <div class="nutrient">
+        Nutrients :
+        <select id="source" onchange="sources();" required>
+            <option value="select">--SELECT--</option>
+            <option value="cal">Calories</option>
+            <option value="pro">Protein</option>
+            <option value="na">Sodium</option>
+            <option value="ca">Calcium</option>
+            <option value="fe">Iron</option>
+            <option value="a">VitaminA</option>
+            <option value="b">VitaminB</option>
+            <option value="c">VitaminC</option>
+            <option value="d">VitaminD</option>
+        </select>
+    </div>
+    <div id="sources">
+        <p>Choose the nutrient!</p>
+    </div>
+</body>
+<script src="script1.js"></script>
+</html>

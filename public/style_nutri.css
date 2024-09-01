@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background: url('images/nutri_background.jpg') no-repeat;
+    background-size: cover;
+}
+.nutri{
+    width: 345px;
+    height: 350px;
+    position: relative;
+    padding: 45px;
+    top: 120px;
+    left: 100px;
+    background-color:  #F9F6EE;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+.nutri .details{
+    font-size: 27px;
+    font-weight: bolder;
+}
+input[type="select"]{
+    margin-left: 30px;
+    border-color: black;
+}
+input[type="radio"]:checked{
+    width: 30px;
+    height: 20px;
+}
+#g{
+    margin-left: 20px;
+    padding-left: 10px;
+}
+#age{
+   margin-left: 25px; 
+   height: 25px;
+   border-width: 3px;
+   font-size: 18px;
+   margin-bottom: 13px;
+}
+.button{
+    margin-top: 25px;
+    padding: 7px;
+    font-size: 20px;
+    border-width: 3px;
+    border-radius: 9px;
+    width: 300px; 
+    background-color:  #1da1f2;
+    margin-left: 20px;
+}
+.button:hover{
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 0.5em 0.5em -0.4em
+}

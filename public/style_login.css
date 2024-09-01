@@ -1,0 +1,208 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.photo{
+    background-image: url('images/login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color :white;
+    font-size: 60px;
+    width: 999px;
+    height:800px;
+    float: left;
+}
+#alert{
+    position:absolute;
+    padding: 10px 20px;
+    width: auto;
+    height: auto;
+    background-color: crimson;
+    color: aliceblue;
+    font-weight: bolder;
+    bottom: 5%;
+    left: 80%;
+    display: none;
+    transform:translate(-50%,-50%);
+}
+.main{
+    float: right;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    height: 800px;
+    width: 519px;
+    display: block;
+    font-weight: bolder;
+    color:blue;
+    cursor: pointer;
+    border-radius: 20%;
+
+}
+.container{
+    margin: 50px;
+    width: 70%;
+    background-color:azure;
+}
+#loginUser{
+    padding: 10px;
+    width: 50%;
+    border-radius: 60px;
+    height: 50px;
+}
+#loginPassword{
+    width: 60%;
+    border-radius: 60px;
+    height: 30px;
+}
+.input{
+    top: 20px;
+    bottom: 10px;
+}
+#button1{
+    color: azure;
+    background-color: #1da1f2 ;
+    border-radius: 12px;
+    width: 300px;
+    padding: 10px;
+    font-size: 20px;
+    display:inline-block;
+    cursor: pointer;
+}
+#button:hover{
+    background-color: antiquewhite;
+}
+span{
+    display: block;
+}
+.text1{
+    animation: mover 3s 1;
+}
+.text2{
+    left: 10px;
+}
+/*.text2{
+    display: inline-block;
+    font-weight: bolder;
+   animation: mover 10s linear infinite;
+}*/
+/*@keyframes mover{
+    0%{
+        text-shadow: 0 0 30px rgba(0,0,0,0);
+    }
+    50%{
+        text-shadow: 0 0 30px rgba(0,0,0,0.30);
+        transform: translateY(30px);
+    }
+    100%{
+        text-shadow: 0 0 30px rgba(0,0,0,0);
+    }
+}*/
+@keyframes mover{
+    0%{
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+/*span:nth-child(1)
+{
+    animation-delay: 0.5s;
+}
+span:nth-child(2)
+{
+    animation-delay: 1s;
+}
+span:nth-child(3)
+{
+    animation-delay: 1.5s;
+}
+span:nth-child(4)
+{
+    animation-delay: 2s;
+}
+span:nth-child(5)
+{
+    animation-delay: 2.5s;
+}
+span:nth-child(6)
+{
+    animation-delay: 3s;
+}
+span:nth-child(7)
+{
+    animation-delay: 3.5s;
+}
+span:nth-child(8)
+{
+    animation-delay: 4s;
+}
+span:nth-child(9)
+{
+    animation-delay: 4.5s;
+}
+span:nth-child(10)
+{
+    animation-delay: 5s;
+}
+span:nth-child(11)
+{
+    animation-delay: 5.5s;
+}
+span:nth-child(12)
+{
+    animation-delay: 6s;
+}
+span:nth-child(13)
+{
+    animation-delay: 6.5s;
+}
+span:nth-child(14)
+{
+    animation-delay: 7s;
+}
+span:nth-child(15)
+{
+    animation-delay: 7.5s;
+}
+span:nth-child(16)
+{
+    animation-delay: 8s;
+}
+span:nth-child(17)
+{
+    animation-delay: 8.5s;
+}
+span:nth-child(18)
+{
+    animation-delay: 9s;
+}*/
+#textbox{
+    width: 120%;
+    background-image: url('images/user.png');
+    background-repeat: no-repeat;
+    background-size: 28px;
+    border-radius: normal;
+    height: 30px;
+    text-align: center;
+
+}
+#text{
+    width: 120%;
+    background-image: url('images/password.jpg');
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 3px 3px;
+    border-radius: normal;
+    height: 30px;
+    text-align: center;
+
+}

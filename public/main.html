@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthFit</title>
+    <link rel="stylesheet" href="style_main.css">
+</head>
+<body>
+    <div class="head">
+        <div class="health">
+            <h1>HealthFit</h1>
+        </div>
+            <a href="">Home</a>
+            <a href="">Sign Out</a>
+    </div>
+    <hr>
+    <div class="images" >
+        <img class="slider" src="images/yoga.jpg" style="width: 100%; height: 550px;">
+        <img class="slider" src="images/diet.jpg" style="width: 100%; height: 580px;">
+        <img class="slider" src="images/report2.jpg" style="width: 100%; height: 500px;">
+    </div>
+    <hr>
+    <div class="appointment">
+        <div class="pic2">
+         <a href="appointment.html"><img src="images/appointment.jpg" alt=""></a>   
+        </div>
+        <div class="cont2">
+            <h2>View Reports</h2>
+            <br>
+            <p>Get access to all the previous medical records.<br><br>Upcoming doctor appointments and previous doctor's visit.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="nutrients">
+        <div class="pic1">
+        <a href="nutri.html"><img src="images/nutrient.jpg" alt=""></a>    
+        </div>
+        <div class="cont1">
+            <h2>Nutrients</h2>
+            <br>
+            <p>Eat Healthy Stay Healthy.<br><br>Know about the nutrients present in various foods and right nutrients required.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="bmi">
+        <div class="pic3">
+            <a href="bmi.html"><img src="images/bmi.jpg" alt=""></a>   
+        </div>
+        <div class="cont3">
+            <h2>Calculate BMI</h2>
+            <br>
+            <p>Estimate your BMI using the user friendly tool.<br><br>Evaluate your risk of developing any lifestyle disease.</p>
+        </div>
+    </div>
+</body>
+<script>
+    var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slider");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+
+</script>
+</html>

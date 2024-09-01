@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-image: url('public/images/appoint.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.input{
+    text-align: center;
+    color: black;
+    background-color:#F9F6EE;
+    width: 500px;
+    height: 400px;
+    padding: 50px 80px;
+    font-size: 100px;
+    margin: 100px 500px;
+    top: 100px;
+    position: relative;
+    display: block;
+    border-radius: 5px;
+    font-weight: bolder;
+    box-shadow: 5px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.container{
+    text-align: left;
+    margin:10px;
+    right: 50px;
+    right: 80%;
+}
+.button{
+    color:black;
+    background-color: #1da1f2;
+    border-radius: 12px;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    display:inline-block;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: antiquewhite;
+}
+#h3{
+    top:12px;
+}
+        #alert{
+              position:absolute;
+              padding: 10px 20px;
+              width: auto;
+              height: auto;
+              background-color: crimson;
+              color: aliceblue;
+              font-weight: bolder;
+              bottom: 20%;
+              left: 80%;
+              display: none;
+              transform:translate(-50%,-50%);
+          }
+        
+    </style>
+</head>
+<body>
+    <div id="alert">Please fill details</div>
+    <div class="input">
+    <form action="" method="post" onsubmit="return valid()">
+        <h1 id="h1">Appointment Details</h1>
+        <br>
+        <div class="container">
+            <label for="id">Patient Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+            <input type="number" name="id" id="id" placeholder="Enter the patient id" size="50" required>
+        </div>
+            <br>
+        <div class="container">
+    <label for="pna">Patient Name:</label>
+    <input type="text" name="pn" id="pna" placeholder="Enter the patient name" size="18" required>
+</div>
+    <br>
+    <div>
+        <button class="button button1" input type="submit"><a href="">View</a></button> 
+    </div>
+    </form>
+</div>
+</body>
+<script src="aj2.js"></script>
+</html>

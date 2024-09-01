@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+  background-color: #e6e6fa ;
+}
+.filter{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+}
+.head{
+  background-color:  #1da1f2;
+    float: left;
+    font-weight: bolder;
+    font-size: 35px;
+    color: aliceblue;
+    width: 100%;
+}
+table{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%; 
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(64,64,64,.7);
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+   
+   }
+   td , th{
+    padding: 15px 20px;
+    text-align: center;
+    
+   
+   }
+   th{
+    background-color:  #1da1f2;
+    color: #fafafa;
+    font-family: 'Open Sans',Sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+   
+   }
+   tr{
+    width: 100%;
+    background-color: #fafafa;
+   }
+   tr:nth-child(even){
+    background-color: #eeeeee;
+   }
+    </style>
+</head>
+<body>
+  <div class="head">
+    <h1>REPORTS</h1>
+    <div class="filter">
+    </div>
+  </div> 
+  <hr>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Last Appointment</th>
+            <th scope="col">Doctor</th>
+            <th scope="col">Next Appointment</th>
+            <th scope="col">Blood Pressure</th>
+            <th scope="col">Cholesterol</th>
+            <th scope="col">Blood Sugar</th>
+          </tr>
+        </thead>
+        <tbody>
+            <%user.forEach(function(item) {%>
+                <tr>
+                    <td><%= item.last_appointment %></td>
+                    <td><%= item.doctor_name %></td>
+                    <td><%= item.appointment_date %></td>
+                    <td><%= item.patient_bp %></td>
+                    <td><%=item.patient_cholesterol%></td>
+                    <td><%=item.patient_sugar %></td>
+                  </tr>
+            <%})%>
+        </tbody>
+      </table>
+</body>
+</html>

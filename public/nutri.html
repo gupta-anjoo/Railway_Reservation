@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrients</title>
+    <style>
+        
+        .h1{
+            padding-bottom: 40px;
+            font-size: 40px;
+            }
+        #nutri_valm{ 
+                position:absolute;
+                font-weight: bolder;
+                border: 1px solid black;
+                display: none;
+                width: 370px;
+                height: 530px;
+                top: 382px;
+                left: 800px;
+                font-size: larger;
+                color: black;
+                padding-left: 45px;
+                transform: translate(-50%,-50%) scale(1.25);
+                box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+                transition: top 0ms ease-in-out 200ms;
+
+            }
+            .closem{
+                position: relative;
+                left: 340px;
+                 font-size: 41px;
+                font-weight: bolder;
+                right: 10px;
+                width: 20px;
+                height: 20px;
+                color: black;
+                cursor: pointer;
+                top: -90px;
+            }
+            .imgm{
+                height: 120px;
+                width: 120px;
+                border-radius: 50%;
+                margin-top: -40px;
+                margin-bottom: 1px;
+                margin-left: 100px;
+            }
+        #nutri_valf{ 
+                position:absolute;
+                font-weight: bolder;
+                border: 1px solid black;
+                display: none;
+                width: 370px;
+                height: 530px;
+                top: 382px;
+                left: 800px;
+                font-size: larger;
+                color: black;
+                padding-left: 45px;
+                transform: translate(-50%,-50%) scale(1.25);
+                box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+                transition: top 0ms ease-in-out 200ms;
+
+            }
+            .closef{
+                position: relative;
+                left: 340px;
+                 font-size: 41px;
+                font-weight: bolder;
+                right: 10px;
+                width: 20px;
+                height: 20px;
+                color: black;
+                cursor: pointer;
+                top: -90px;
+            }
+            .imgf{
+                height: 120px;
+                width: 120px;
+                border-radius: 50%;
+                margin-top: -40px;
+                margin-bottom: 1px;
+                margin-left: 100px;
+            }
+            h2{
+                display: flex;
+                flex-direction: row;
+            }
+            h2:before,h2:after{
+                content: "";
+                flex: 1 1;
+                border-bottom: 2px solid #000;
+                margin: auto;
+            }
+    </style>
+    <link rel="stylesheet" href="style_nutri.css"> 
+</head>
+<body>
+    <div id="nutri_valm">
+        <img src="images\male1.png" class="imgm">
+        <div class="closem" onclick="closingm();">&times;</div>
+        <br>
+       Calories :
+       <input type="number" id="cal" size="5" disabled>
+       <br><br>
+       Protein :
+       <input type="number" id="pro" size="5" disabled>
+       <br><br>
+       Sodium :
+       <input type="number" id="na" size="5" disabled>
+       <br><br>
+       Calcium :
+       <input type="number" id="ca" size="5" disabled>
+       <br><br>
+       Iron :
+       <input type="number" id="fe" size="5" disabled>
+       <br><br>
+       Vitamin A :
+       <input type="number" id="A" size="5" disabled>
+       <br><br>
+       Vitamin B :
+       <input type="number" id="B" size="5" disabled>
+       <br><br>
+       Vitamin C :
+       <input type="number" id="C" size="5" disabled>
+       <br><br>
+       Vitamin D :
+       <input type="number" id="D" size="5" disabled>
+    </div>
+    <div id="nutri_valf">
+        <img src="images\female1.png" class="imgf">
+        <div class="closef" onclick="closingf();">&times;</div>
+        <br>
+       Calories (kcal)&nbsp;&nbsp;&nbsp;&nbsp;:
+       <input type="number" id="calf" size="3" disabled>
+       <br><br>
+       Protein (gram)&nbsp;&nbsp;&nbsp;:
+       <input type="number" id="prof" size="3" disabled>
+       <br><br>
+       Sodium (mg)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+       <input type="number" id="naf" size="3" disabled>
+       <br><br>
+       Calcium (mg)&nbsp;&nbsp;&nbsp;&nbsp;:
+       <input type="number" id="caf" size="3" disabled>
+       <br><br>
+       Iron (mg)&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+       <input type="number" id="fef" size="3" disabled>
+       <br><br>
+       Vitamin A (mcg):
+       <input type="number" id="Af" size="3" disabled>
+       <br><br>
+       Vitamin B (mcg):
+       <input type="number" id="Bf" size="3" disabled>
+       <br><br>
+       Vitamin C (mcg):
+       <input type="number" id="Cf" size="3" disabled>
+       <br><br>
+       Vitamin D (mcg):
+       <input type="number" id="Df" size="3" disabled>
+    </div>
+    <div class="nutri">
+        <h1>Nutrients</h1>
+        <br>
+        <div class="details">
+            Gender  &nbsp; :  
+                Male
+                <input type="radio" name="g" value="male" id="mg" required>
+                &nbsp;
+                Female
+                <input type="radio" name="g" value="female" id="fg" required>
+                <br><br>
+        </div>
+        <div class="details">
+            Age &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   :
+            <select name="age" id="age" onchange="nutrients();" required>
+                <option value="select">--select--</option>
+                <option value="14-18">14-18</option>
+                <option value="19-24">19-24</option>
+                <option value="25-50">25-50</option>
+                <option value="51-60">51-60</option>
+                <option value="61 and above">61+</option>
+            </select>
+        </div>
+        <br><br>
+        <h2>OR</h2>
+         <br>
+        <button class="button" onclick="opening();">SOURCES</button>
+    </div>
+</body>
+<script src="script1.js"></script>
+</html>
